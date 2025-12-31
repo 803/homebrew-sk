@@ -1,8 +1,8 @@
 #!/usr/bin/env bun
 
-const version = process.argv[2]?.replace(/^v/, "");
+const version = process.argv[2]?.replace(/^sk@/, "");
 if (!version) {
-  console.error("Usage: bun update-formula.ts <version>");
+  console.error("Usage: bun update-formula.ts <tag>  (e.g., sk@0.1.0)");
   process.exit(1);
 }
 
@@ -17,7 +17,7 @@ const platforms = [
 ];
 
 // Fetch SHASUMS256.txt and parse hashes (faster than downloading all binaries)
-const shasumsUrl = `https://github.com/${REPO}/releases/download/v${version}/SHASUMS256.txt`;
+const shasumsUrl = `https://github.com/${REPO}/releases/download/sk@${version}/SHASUMS256.txt`;
 const response = await fetch(shasumsUrl);
 if (!response.ok) {
   console.error(`Failed to fetch ${shasumsUrl}: ${response.status}`);
@@ -58,7 +58,7 @@ for (const [platform, hash] of Object.entries(hashes)) {
 }
 
 await Bun.write(FORMULA_PATH, formula);
-console.log(`\nUpdated ${FORMULA_PATH} to v${version}`);
+console.log(`\nUpdated ${FORMULA_PATH} to sk@${version}`);
 
 // Create versioned formula (e.g., sk@0.2.0.rb with class SkAT020)
 const versionedClass = `class SkAT${version.replace(/\./g, "")}`;
