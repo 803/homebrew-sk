@@ -1,0 +1,33 @@
+# Homebrew Tap for sk
+
+Homebrew formula for installing [sk](https://github.com/skills-supply/skillssupply) - the Skills Supply CLI.
+
+## Installation
+
+```bash
+brew install skills-supply/sk/sk
+```
+
+## Versioned Installs
+
+You can install a specific version:
+
+```bash
+brew install skills-supply/sk/sk@0.1.0
+```
+
+## Upgrade
+
+```bash
+brew upgrade sk
+```
+
+## Uninstall
+
+```bash
+brew uninstall sk
+```
+
+## About sk
+
+sk is a CLI for installing and managing AI agent skills. For more information, see the [main repository](https://github.com/skills-supply/skillssupply).
