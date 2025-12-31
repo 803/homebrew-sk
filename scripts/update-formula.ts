@@ -6,7 +6,7 @@ if (!version) {
   process.exit(1);
 }
 
-const REPO = "803/skillssupply";
+const REPO = "803/skills-supply";
 const FORMULA_PATH = "Formula/sk.rb";
 
 const platforms = [
