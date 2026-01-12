@@ -7,20 +7,20 @@ class SkAT022 < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/803/skills-supply/releases/download/sk@#{version}/sk-darwin-arm64.tar.gz"
-      sha256 "59f9375257ea90da970a202d5968caed669734ffbc145b97f5c1eec1967b5e0c" # sk-darwin-arm64
+      sha256 "f03c2d77f4033abfd4a776da071792ba7aebfeb5a904157619f6865d31757a39" # sk-darwin-arm64
     else
       url "https://github.com/803/skills-supply/releases/download/sk@#{version}/sk-darwin-x64.tar.gz"
-      sha256 "c372296c5837b8013739b821a07a1195dd248c3b93e227bb206d36b27dfa2c44" # sk-darwin-x64
+      sha256 "3e44e3cc1a6f8d4c39b994412a2c5460a5ef52100f16e429fe110bb3e8705c32" # sk-darwin-x64
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/803/skills-supply/releases/download/sk@#{version}/sk-linux-arm64.tar.gz"
-      sha256 "0d9a595d9f671330d971d508ecdf0ddbf30c00ed3c837a2b68545573534ff726" # sk-linux-arm64
+      sha256 "f39e355379d4949777d892cff2ec29f4edaa425fd3f233fd8b603994deba8456" # sk-linux-arm64
     else
       url "https://github.com/803/skills-supply/releases/download/sk@#{version}/sk-linux-x64.tar.gz"
-      sha256 "4417f5dd0483da121fdd0816202a5f859c877ea52500773b3662f668b647e5cc" # sk-linux-x64
+      sha256 "82166afe841fae1deaf54dec0e579fe0115f59124da2b7841f85653c7ba6cfcc" # sk-linux-x64
     end
   end
 
