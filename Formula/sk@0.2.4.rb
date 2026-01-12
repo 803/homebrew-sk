@@ -1,4 +1,4 @@
-class Sk < Formula
+class SkAT024 < Formula
   desc "Skills Supply CLI - Install and manage AI agent skills"
   homepage "https://github.com/803/skills-supply"
   license "MIT"
